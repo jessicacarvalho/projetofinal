@@ -1,0 +1,396 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- O que está dentro do 'content' quer dizer que a escala principal será do celular e vai se adaptar a tela do computador seja qual for-->
+
+	<!-- Bootstrap -->
+<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	 
+
+	<!-- ícones -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+	
+	<!-- links de css -->
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/responsive.css">
+	
+<title>TendeTudo</title>
+</head>
+
+<body>
+	
+	<!-- Modal -->
+	<div class="modal" id="modalLogin">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Login</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">×</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	       <div class="form-group">
+     			 <label for="Email1">Email</label>
+     			 <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+     	  </div>
+    		<div class="form-group">
+      			<label for="Password1">Senha</label>
+      			<input type="password" class="form-control" id="Password1" placeholder="Digite sua senha">
+   			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Logar</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!--Modal -->
+
+
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  	<a class="navbar-brand" href="index.html">TendeTudo</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	 	</button>
+
+	  <div class="collapse navbar-collapse" id="navbarColor02">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Início <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="acontece.html">Quem somos</a>
+	      </li>
+	      <li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Dropdown link
+			  </a>
+			  <div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Link 1</a>
+				<a class="dropdown-item" href="#">Link 2</a>
+				<a class="dropdown-item" href="#">Link 3</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+	        <a class="nav-link" href="music.html">Produtos</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="sobre.html">Cadastro</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" size="40" type="text" placeholder="Encontre o que deseja">
+	      <button class="btn btn-danger my-2 my-sm-0 " type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+	    </form>   
+		<ul class="navbar-nav login">
+			<li class="nav-item ">
+				<a class="nav-link" href="#modalLogin" data-toggle="modal" data-target="#modalLogin"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+	  		</li>
+	    </ul>
+	  </div>
+	</nav>   <!-- Fim de nav -->
+	
+	
+	
+	<div class="slider-area">
+        	<!-- Slider -->
+			<div class="block-slider block-slider4"> 
+				<ul class="" id="bxslider-home4">
+					<li>
+						<img src="img/5.jpg" alt="Slide">
+						<div class="caption-group">
+							<h2 class="caption title">
+								iPhone <span class="primary">6 <strong>Plus</strong></span>
+							</h2>
+							<h4 class="caption subtitle">Dual SIM</h4> 
+							<a class="caption button-radius" href="#"><span class="icon"></span>Comprar</a>
+						</div>
+					</li>
+					<li><img src="img/3.jpg" alt="Slide">
+						<div class="caption-group">
+							<h2 class="caption title">
+								Kit escolar com <span class="primary">50% <strong>desconto</strong></span>
+							</h2>
+							<h4 class="caption subtitle">Volta as aulas</h4> 
+							<a class="caption button-radius" href="#"><span class="icon"></span>Comprar</a>
+						</div>
+					</li>
+					<li><img src="img/4.jpg" alt="Slide">
+					<div class="caption-group">
+								<h2 class="caption title">
+								Apple <span class="primary">Store <strong>Ipod</strong></span>
+							</h2>
+							<h4 class="caption subtitle">Selecionar item</h4>
+							<a class="caption button-radius" href="#"><span class="icon"></span>Comprar</a>
+						</div>
+					</li>
+				<!--	<li><img src="img/h4-slide4.png" alt="Slide">
+						<div class="caption-group">
+						  <h2 class="caption title">
+								Apple <span class="primary">Store <strong>Ipod</strong></span>
+							</h2>
+							<h4 class="caption subtitle">& Phone</h4> 
+							<a class="caption button-radius" href="#"><span class="icon"></span>Comprar</a>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+			<!-- ./Slider -->
+    </div> <!-- End slider area -->
+	
+	
+	<div class="promo-area">  <!-- Início de promo info -->
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md col-sm-6">
+                    <div class="single-promo promo1">
+                        <i class="fas fa-female fa-2x"></i>
+					    <p>Roupas</p>
+                    </div>
+                </div>
+                <div class="col-md col-sm-6">
+                    <div class="single-promo promo2">
+                        <i class="fas fa-book fa-2x"></i>
+                        <p>Livros</p>
+                    </div>
+                </div>
+                <div class="col-md col-sm-6">
+                    <div class="single-promo promo3">
+                        <i class="fa fa-lock fa-2x"></i>
+                        <p>Eletrônicos</p>
+                    </div>
+                </div>
+                <div class="col-md col-sm-6">
+                    <div class="single-promo promo4">
+                        <i class="fas fa-desktop fa-2x"></i>
+                        <p>Informática</p>
+                    </div>
+				</div>
+				<div class="col-md col-sm-6">
+                    <div class="single-promo promo5">
+                        <i class="fas fa-tablet-alt fa-2x"></i>
+                        <p>Celular e Games</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim de promo info -->
+	
+	
+	<!-- Início de variedade -->
+	
+	<div class="maincontent-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="latest-product">
+                        <h2 class="section-title">Produtos</h2>
+                        <div class="product-carousel">
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/dell1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/extraordinario1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div> 
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/game1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div>                              
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/extraordinario1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div>                        
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/game1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div>                                
+                            </div>
+                            <div class="single-product">
+                                <div class="product-f-image">
+                                    <img src="img/dell1.jpg" alt="">
+                                    <div class="product-hover">
+                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Carrinho</a>
+                                        <a href="#" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
+                                    </div>
+                                </div>
+                                
+                                <h2><a href="#">Extraordinário</a></h2>
+                                
+                                <div class="product-carousel-price">
+									<a href="#"><ins>R$ 37,90</ins> <del>R$39.90</del></a>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim de variedade -->
+	
+	
+	
+	<!-- Início footer -->	  
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>TendeTudo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                        <div class="footer">
+                            
+							<a href="#"><i class="fab fa-instagram fa-3x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Navegação </h2>
+                        <ul>
+                            <li><a href="#">Minha Conta</a></li>
+                            <li><a href="#">Meus Pedidos</a></li>
+                            <li><a href="#">Lista de Desejos</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Categorias</h2>
+                        <ul>
+                            <li><a href="#">Celulares e Games</a></li>
+                            <li><a href="#">Eletronicos</a></li>
+                            <li><a href="#">Livros</a></li>
+                            <li><a href="#">Informática</a></li>
+                            <li><a href="#">Roupas</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus!</p>
+                        <div class="newsletter-form">
+                            <form action="#">
+                                <input type="email" placeholder="Digite seu e-mail">
+                                <input type="submit" value="enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End footer top area -->
+    
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                        <p>&copy; 2018 TendeTudo Treinamentos. <a href="http://www.hcode.com.br" target="_blank">tendetudo.com.br</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="footer-card-icon">
+                        <i class="fa fa-cc-discover"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-paypal"></i>
+                        <i class="fa fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim do footer -->
+	
+	
+<!-- Latest jQuery form server -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+    
+    <!-- Slider -->
+    <script type="text/javascript" src="js/bxslider.min.js"></script>
+	<script type="text/javascript" src="js/script.slider.js"></script>
+</body>
+</html>
